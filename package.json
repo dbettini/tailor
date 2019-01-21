@@ -36,6 +36,8 @@
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^11.2.0",
+    "@ckeditor/ckeditor5-vue": "^1.0.0-beta.1",
     "auto-bind": "^1.2.0",
     "aws-sdk": "^2.178.0",
     "axios": "^0.15.2",
@@ -98,6 +100,7 @@
     "sass-web-fonts": "^2.0.2",
     "save-as": "^0.1.8",
     "sequelize": "^4.22.0",
+    "snyk": "^1.103.4",
     "string-template": "^1.0.0",
     "to-case": "^2.0.0",
     "truncate": "^2.0.0",
@@ -124,8 +127,7 @@
     "vuex-module": "^0.4.0",
     "vuex-router-sync": "^3.0.0",
     "weekstart": "^1.0.0",
-    "yup": "^0.24.1",
-    "snyk": "^1.103.4"
+    "yup": "^0.24.1"
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",

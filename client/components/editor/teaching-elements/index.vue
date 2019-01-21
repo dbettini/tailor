@@ -34,6 +34,7 @@ import TeAudio from './Audio';
 import TeBreak from './PageBreak';
 import TeBrightcoveVideo from './BrightcoveVideo';
 import TeCarousel from './Carousel/Carousel';
+import TeCkeditor from './CKEditor';
 import TeEmbed from './Embed';
 import TeHtml from './Html';
 import TeImage from './Image';
@@ -53,6 +54,7 @@ const TE_TYPES = {
   VIDEO: 'te-video',
   ACCORDION: 'te-accordion',
   CAROUSEL: 'te-carousel',
+  CKEDITOR: 'te-ckeditor',
   MODAL: 'te-modal',
   PDF: 'te-pdf',
   AUDIO: 'te-audio',
@@ -122,6 +124,7 @@ export default {
     TeBreak,
     TeBrightcoveVideo,
     TeCarousel,
+    TeCkeditor,
     TeEmbed,
     TeHtml,
     TeImage,
