@@ -42,7 +42,7 @@ const applyBrandConfig = config => {
 
 module.exports = (options, req) => ({
   presets: [
-    require('poi-preset-eslint')({ mode: '*' }),
+    require('poi-preset-eslint')({ mode: '*', loaderOptions: { emitWarning: true } }),
     require('poi-preset-bundle-report')()
   ],
   entry: {
