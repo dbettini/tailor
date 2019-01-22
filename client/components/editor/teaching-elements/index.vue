@@ -38,6 +38,7 @@ import TeCkeditor from './CKEditor';
 import TeEmbed from './Embed';
 import TeHtml from './Html';
 import TeImage from './Image';
+import TeJodit from './Jodit';
 import TeModal from './Modal';
 import TePdf from './Pdf';
 import TeTable from './Table';
@@ -55,6 +56,7 @@ const TE_TYPES = {
   ACCORDION: 'te-accordion',
   CAROUSEL: 'te-carousel',
   CKEDITOR: 'te-ckeditor',
+  JODIT: 'te-jodit',
   MODAL: 'te-modal',
   PDF: 'te-pdf',
   AUDIO: 'te-audio',
@@ -128,6 +130,7 @@ export default {
     TeEmbed,
     TeHtml,
     TeImage,
+    TeJodit,
     TeModal,
     TePdf,
     TeTable,

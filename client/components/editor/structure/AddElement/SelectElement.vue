@@ -38,6 +38,7 @@ import SelectAssessment from './SelectAssessment';
 const TE_TYPES = [
   { type: 'HTML', label: 'Text', icon: 'mdi-format-text' },
   { type: 'CKEDITOR', label: 'Text (CKEditor)', icon: 'mdi-format-text' },
+  { type: 'JODIT', label: 'Text (Jodit)', icon: 'mdi-format-text' },
   { type: 'IMAGE', label: 'Image', icon: 'mdi-image' },
   { type: 'VIDEO', label: 'Video', icon: 'mdi-video' },
   { type: 'BRIGHTCOVE_VIDEO', label: 'Brightcove Video', icon: 'mdi-video' },
