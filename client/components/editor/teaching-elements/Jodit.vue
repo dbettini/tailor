@@ -9,14 +9,12 @@
       </div>
     </div>
     <div v-else>
-      <ckeditor
+      <jodit
         v-if="isFocused"
         v-model="content"
-        :editor="editor"
+        :id="id"
         :config="config"
-        @ready="onEditorReady"
-      >
-      </ckeditor>
+      />
       <div
         v-else
         v-html="content"
@@ -30,20 +28,20 @@
 import debounce from 'lodash/debounce';
 import get from 'lodash/get';
 
-import CKEditor from '@ckeditor/ckeditor5-vue';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import 'jodit/build/jodit.min.css';
+import Jodit from 'jodit-vue';
 
 export default {
-  name: 'te-ckeditor',
+  name: 'te-jodit',
   props: {
     element: { type: Object, required: true },
-    isFocused: { type: Boolean, default: false }
+    isFocused: { type: Boolean, default: false },
+    id: { type: String, default: 'editor' }
   },
   data() {
     return {
-      editor: ClassicEditor,
       content: get(this.element, 'data.content', ''),
-      config: {}
+      config: { autofocus: true }
     };
   },
   computed: {
@@ -53,9 +51,6 @@ export default {
     }
   },
   methods: {
-    onEditorReady(editor) {
-      editor.editing.view.focus();
-    },
     save() {
       if (!this.hasChanges) return;
       this.$emit('save', { content: this.content });
@@ -69,7 +64,7 @@ export default {
       this.save();
     }, 2000)
   },
-  components: { ckeditor: CKEditor.component }
+  components: { Jodit }
 };
 </script>
 

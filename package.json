@@ -76,6 +76,8 @@
     "is-iexplorer": "^1.0.0",
     "is-safari": "^1.0.0",
     "is-url": "^1.2.2",
+    "jodit": "3.2.31",
+    "jodit-vue": "^1.2.3",
     "joi": "^10.0.1",
     "jquery": "^3.1.1",
     "jsonwebtoken": "^8.0.0",
