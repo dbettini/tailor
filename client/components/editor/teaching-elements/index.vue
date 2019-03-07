@@ -56,7 +56,7 @@ const TE_TYPES = {
   ACCORDION: 'te-accordion',
   CAROUSEL: 'te-carousel',
   CKEDITOR: 'te-ckeditor',
-  JODIT: 'te-jodit',
+  HTML_JODIT: 'te-jodit',
   MODAL: 'te-modal',
   PDF: 'te-pdf',
   AUDIO: 'te-audio',
