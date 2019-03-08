@@ -9,19 +9,19 @@
       </div>
     </div>
     <div v-else>
-      <ckeditor
+      <!-- <ckeditor
         v-if="isFocused"
         v-model="content"
         :editor="editor"
         :config="config"
         @ready="onEditorReady"
       >
-      </ckeditor>
-      <div
+      </ckeditor> -->
+      <!-- <div
         v-else
         v-html="content"
         class="editor"
-      />
+      /> -->
     </div>
   </div>
 </template>
@@ -29,9 +29,9 @@
 <script>
 import debounce from 'lodash/debounce';
 import get from 'lodash/get';
-
-import CKEditor from '@ckeditor/ckeditor5-vue';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+// TODO: Remove comments if CKEditor needed, but it's breaking the build for now
+// import CKEditor from '@ckeditor/ckeditor5-vue';
+// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 export default {
   name: 'te-ckeditor',
@@ -41,7 +41,7 @@ export default {
   },
   data() {
     return {
-      editor: ClassicEditor,
+      // editor: ClassicEditor,
       content: get(this.element, 'data.content', ''),
       config: {}
     };
@@ -68,8 +68,8 @@ export default {
     content: debounce(function () {
       this.save();
     }, 2000)
-  },
-  components: { ckeditor: CKEditor.component }
+  }
+  // components: { ckeditor: CKEditor.component }
 };
 </script>
 
