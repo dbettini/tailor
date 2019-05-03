@@ -91,6 +91,98 @@ export default {
 
 <style lang="scss">
 .te-html {
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: normal;
+  font-family: Helvetica, sans-serif;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  a {
+    color: #1e87f0;
+    text-decoration: none;
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+
+  address,
+  dl,
+  fieldset,
+  figure,
+  ol,
+  p,
+  pre,
+  ul {
+    margin: 0 0 20px 0;
+  }
+
+  * + blockquote,
+  * + address,
+  * + dl,
+  * + fieldset,
+  * + figure,
+  * + ol,
+  * + p,
+  * + pre,
+  * + ul {
+    margin-top: 20px;
+  }
+
+  ol,
+  ul {
+    padding-left: 30px;
+  }
+
+  blockquote {
+    margin-top: 20px;
+    margin: 0 0 20px 0;
+    font-style: italic;
+    border-left: 2px solid #222;
+    padding: 0;
+    padding-left: 5px;
+    color: #222;
+  }
+
+  mark {
+    padding: 0;
+    background: #ffd;
+  }
+
+  pre {
+    tab-size: 4;
+    overflow: auto;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+  }
+
+  table {
+    border: none;
+    border-collapse: collapse;
+    table-layout: fixed;
+    empty-cells: show;
+    max-width: 100%;
+
+    tr td,
+    tr th {
+      border: 1px solid #ddd;
+      text-align: left;
+      vertical-align: middle;
+    }
+  }
+
   .editor {
     min-height: 117px;
 
